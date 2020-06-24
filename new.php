@@ -1,16 +1,5 @@
 <?php
 
-//check if current time is set
-if (isset($_GET['ct'])) {
-    $ct = $_GET['ct'];
-} else {
-    $ct = date('Y-m');
-}
-
-$timestamp = strtotime($ct . '-1');
-
-
-
 //Get what today is 
 $today = date('Y-m-j', time());
 
